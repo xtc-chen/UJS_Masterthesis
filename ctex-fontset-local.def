@@ -1,0 +1,39 @@
+\ProvidesExplFile{ctex-fontset-local.def}{\ExplFileDate}{2.4.14}{\ExplFileDescription}
+
+
+\setmainfont[
+  Path           = fonts/,
+  BoldFont    = timesbd.ttf,
+  ItalicFont     = timesi.ttf,
+  BoldItalicFont = timesbi.ttf
+  ]{times.ttf}
+
+
+\setCJKmainfont[
+  Path       = fonts/,
+  BoldFont  = simhei.ttf,
+  ItalicFont = simkai.ttf
+  ]{simsun.ttc}
+\setCJKsansfont[Path = fonts/]{simhei.ttf}
+\setCJKmonofont[Path = fonts/]{simfang.ttf}
+
+
+\setCJKfamilyfont {zhsong} [Path = fonts/, BoldFont = FandolSong-Bold.otf] {simsun.ttc}
+\setCJKfamilyfont {zhhei}  [Path = fonts/, BoldFont = FandolHei-Bold.otf]  {simhei.ttf}
+\setCJKfamilyfont {zhfs}   [Path = fonts/] {simfang.ttf}
+\setCJKfamilyfont {zhkai}  [Path = fonts/] {simkai.ttf}
+
+\NewDocumentCommand \songti   {} {\CJKfamily {zhsong}}
+\NewDocumentCommand \heiti    {} {\CJKfamily {zhhei}}
+\NewDocumentCommand \fangsong {} {\CJKfamily {zhfs}}
+\NewDocumentCommand \kaishu   {} {\CJKfamily {zhkai}}
+
+\newcommand{\mycite}[1]{\scalebox{1.4}[1.4]{\raisebox{-0.65ex}{\cite{#1}}}}
+
+
+\def\cblue{\textcolor{blue}}%black
+\def\cred{\textcolor{red}}
+
+\def\tr{\text{tr}}
+\def\col{\text{col}}
+\def\diag{\text{diag}}
