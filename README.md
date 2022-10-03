@@ -29,6 +29,18 @@ UJS_Masterthesis
 + Texlive2019（Texlive2019下载地址：https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2019/ ）
 + 采用xelatex编译
 
+# 已知问题汇总
++ 已有同学使用了较高版本的Texlive2022进行编译。会出现找不到字体的错误，原因是后续的texlive中newtx宏包有点不太一样。因为本人原因，目前尚未解决。所以建议用Texlive2019进行编译。
+
+# FAQ
++Q:引用文献的BibTeX文件可以从哪里获取？
+
+A:几乎任何学术文献库都会提供BibTeX格式的引用数据。在引用量不大的情况下，可以去百度学术或者更谷歌学术下进行导出。
+
++Q:什么样的图片可以插入？
+
+A:主流格式如:png .jpg都支持。建议保存为.pdf格式，编译速度会加快，且如果.pdf的矢量图格式会让排版更好看。
+
  # 建议及问题反馈
 + E-mai:chenxtphil@163.com
  
