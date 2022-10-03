@@ -4,9 +4,9 @@
 
 > 非官方版本，不保证能够满足最终论文提交等要求！！！！
 
-本项目为**江苏大学**硕士研究生学位论文UJS_Masterthesis模板，论文样式参考[2022年4月江苏大学研究生院发布的新的硕士学论模板](https://yjsy.ujs.edu.cn/info/1273/13655.htm)
+本项目为**[江苏大学](https://www.ujs.edu.cn/)**硕士研究生学位论文UJS_Masterthesis模板，论文样式参考[2022年4月江苏大学研究生院发布的硕士学论模板](https://yjsy.ujs.edu.cn/info/1273/13655.htm)
 
-基于[ctexbook](https://ctan.org/pkg/ctex)，以及前人的基础进行修改
+本项目基于[ctexbook](https://ctan.org/pkg/ctex)，以及前人的基础进行修改
 
 希望此模板能够给江苏大学里喜欢用Latex的同学给予学位论文撰写上的帮助\
 
@@ -25,15 +25,14 @@ HHU-thesis
  |- ReadMe.md                       // 本文件
 ```
  
- 
- # 建议及问题反馈
-+ E-mai:chenxtphil@163.com
-
  # 我的编译环境
 + Windows10
 + Texstudio
 + Texlive2019（Texlive2019下载地址：https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2019/ ）
 + 采用xelatex编译
+
+ # 建议及问题反馈
++ E-mai:chenxtphil@163.com
  
  # 致谢
  感谢[Haixing Hu](https://github.com/Haixing-Hu)提供的2005版参考文献著录BibTeX样式[GBT7714-2005](https://github.com/Haixing-Hu/GBT7714-2005-BibTeX-Style)及[Zeping Lee](https://github.com/zepinglee)提供的2015版参考文献著录BibTeX样式[GBT7714-2015](https://github.com/zepinglee/gbt7714-bibtex-style)，为本项目LaTeX模板的形成提供了很大的帮助。
