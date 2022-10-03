@@ -5,6 +5,7 @@
 希望此模板能够给江苏大学里喜欢用Latex的同学给予学位论文撰写上的帮助\
 使用前请阅读▲README.txt文件\
 推荐使用Texstudio+Texlive2019进行编译\
+Texlive下载地址:https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2019/
 编译模式请采用xelatex编译\
 使用xelatex时，如果提示缺少某字体，请自行下载安装到系统中\
 UJS_Masterthesis是为了帮助江苏大学硕士毕业生撰写毕业论文而编写的LaTeX论文模板，其前提是用户已经能处理一般的LaTeX文档，并对BibTeX有一定了解，如果你从来没有接触过LaTeX，建议先学习相关基础知识，磨刀不误砍柴工，能有助你更好使用模板。\
