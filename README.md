@@ -6,15 +6,15 @@
 
 本项目为[江苏大学](https://www.ujs.edu.cn/)**硕士**研究生学位论文UJS_Masterthesis模板，论文样式参考[2022年4月江苏大学研究生院发布的硕士学论模板](https://yjsy.ujs.edu.cn/info/1273/13655.htm)
 
-基于[ctexbook](https://ctan.org/pkg/ctex)，以及前人的基础进行修改
+本项目基于[ctexbook](https://ctan.org/pkg/ctex)，以及前人的基础进行修改
 
-希望此模板能够给江苏大学里喜欢用Latex的同学给予学位论文撰写上的帮助
+希望此模板能够给江苏大学里喜欢用Latex的同学给予学位论文撰写上的帮助\
 
 # 文件列表及说明
 ```
 UJS_Masterthesis
  |- ujsthesis.cls                   // LaTeX宏模板文件
- |- mian.tex                        // LaTeX主模板
+ |- main.tex                        // LaTeX主模板
  |- main.pdf                        // LaTeX模板
  |- reference.bib                   // LaTeX模板中的参考文献文件
  |- gbt7714-2005-numerical.bst      // 国标参考文献BibTeX样式文件2005版
