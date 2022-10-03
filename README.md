@@ -18,7 +18,7 @@ UJS_Masterthesis
  |- main.pdf                        // LaTeX模板
  |- reference.bib                   // LaTeX模板中的参考文献文件
  |- gbt7714-2005-numerical.bst      // 国标参考文献BibTeX样式文件2005版
- |- figures/                        // 论文图片文件夹
+ |- figures                         // 论文图片文件夹
  |- date                            // 每一章的tex文件
  |- fonts                           // 字体文件夹
 ```
