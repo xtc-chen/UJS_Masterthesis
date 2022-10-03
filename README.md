@@ -25,7 +25,7 @@ UJS_Masterthesis
  
  # 我的编译环境
 + Windows10
-+ Texstudio
++ Texstudio 4.3
 + Texlive2019（Texlive2019下载地址：https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2019/ ）
 + 采用xelatex编译
 
