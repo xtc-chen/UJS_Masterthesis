@@ -10,19 +10,17 @@
 
 希望此模板能够给江苏大学里喜欢用Latex的同学给予学位论文撰写上的帮助\
 
-# UJS_Masterthesis
+# 文件列表及说明
 ```
-HHU-thesis
- |- HHU-thesis.cls                  // LaTeX宏模板文件
- |- document.tex                    // LaTeX模板
- |- document.pdf                    // LaTeX模板
- |- ref.bib                         // LaTeX模板中的参考文献文件
- |- bst/GBT7714-2005.bst            // 国标参考文献BibTeX样式文件2005版
- |- bst/GBT7714-2015.bst            // 国标参考文献BibTeX样式文件2015版
- |- figures/logo/hohai_logo.png     // 论文封皮河海大学标志
- |- figures/hohai_badge.pdf         // 样图
- |- tex/*.tex                       // LaTeX模板样例中的独立章节
- |- ReadMe.md                       // 本文件
+UJS_Masterthesis
+ |- ujsthesis.cls                   // LaTeX宏模板文件
+ |- mian.tex                        // LaTeX主模板
+ |- main.pdf                        // LaTeX模板
+ |- reference.bib                   // LaTeX模板中的参考文献文件
+ |- gbt7714-2005-numerical.bst      // 国标参考文献BibTeX样式文件2005版
+ |- figures/                        // 论文图片文件夹
+ |- date                            // 每一章的tex文件
+ |- fonts                           // 字体文件夹
 ```
  
  # 我的编译环境
