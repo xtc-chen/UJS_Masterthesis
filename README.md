@@ -40,6 +40,9 @@ UJS_Masterthesis
 + Q：什么样的图片可以插入？
 
   A：主流格式如:png .jpg都支持。建议保存为.pdf格式，编译速度会加快，且如果.pdf的矢量图格式会让排版更好看。
+  
++ Q：Latex的表格怎么弄？
+  A：可以尝试使用Latex表格在线制作：https://www.latex-tables.com/ 。
 
  # 建议及问题反馈
 + E-mai：chenxtphil@163.com
