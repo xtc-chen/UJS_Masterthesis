@@ -42,10 +42,13 @@ UJS_Masterthesis
   A：主流格式如:png .jpg都支持。建议保存为.pdf格式，编译速度会加快，且如果.pdf的矢量图格式会让排版更好看。
   
 + Q：Latex的表格怎么弄？
+
   A：可以尝试使用Latex表格在线制作：https://www.latex-tables.com/ 。
 
  # 建议及问题反馈
 + E-mai：chenxtphil@163.com
+
+ # QQ交流群： 667981632
  
  # 致谢
  感谢[Haixing Hu](https://github.com/Haixing-Hu)提供的2005版参考文献著录BibTeX样式[GBT7714-2005](https://github.com/Haixing-Hu/GBT7714-2005-BibTeX-Style)，为本项目LaTeX模板的形成提供了很大的帮助。
