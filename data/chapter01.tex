@@ -1,18 +1,71 @@
 \chapter{绪论}
 
+\section{图表}
+\subsection{图}
+图应有图号、图题及必要的说明，图中标注一律用英文，图文说明用中文。图应具有“自明性”，即只看图、图题而不阅读正文，就可以理解图意。切忌与表重复。图位于文中表述之后。
 
+图号由“图”和阿拉伯数字组成，阿拉伯数字由前后两部分组成，中间用“.”号分开，前部分数字表示图所在章的序号，后部分数字表示图在该章的序号。例如：“图4.3”，它表示第四章第三个图。
 
-\section{}
-\subsection{}
-\subsubsection{}
+图题采用中英文对照，中文用5号楷体，英文用5号字。图题置于图号之后，图号及图题置于图下方居中位置。
 
-\begin{figure}[!h]
+引用图应在图题右上角标出文献来源。
+
+曲线图的纵横坐标必须标注“量、标准规定符号、单位”，此三者只有在不必要标明(如无量纲等)的情况下方可省略。坐标上标注的量的符号和缩略词必须与正文中一致。
+
+照片图要求主题和主要显示部分的轮廓鲜明，便于制版。如用放大缩小的复制品，必须清晰，反差适中。照片上要有表示目的物尺寸的标度。
+
+绘图必须工整、清楚、规范，其中机械零件图按机械制图规格要求，示意图应能清楚反映图示内容。
+
+\begin{figure}[!ht]
 	\centering
 	{\includegraphics[scale=0.1]{Figures/logo/ujslogo.pdf}}
 	\bicaption{江苏大学}{Jiangsu University}
 	\label{Jiangsu University}
 \end{figure}
 
+\subsection{表}
+
+表应有表号、表题或必要的说明，表也应有“自明性”。表的编排尽可能按内容（或测试项目）由左至右横排、数据依序竖排的格式安排，表的各栏应标明量纲、单位或标准规定的符号，只有在无必要的情况下方可省略。表内不宜用“同上”、“同左”、“‥”或类似的词及符号，表内空白表示“无此项”或“未测”。
+
+表号的编写方法与图号相同，例如“表2.6”，它表示第二章第六个表。
+
+表题置于表号之后，表号及表题置于表上方居中位置。
+
+如某个表需要转页接排，在随后的各页上要重复表号，表号后跟表题(可省略)或跟“(续)”，如表1.2(续)。续表均要重复表的编排。
+图、表若需注释，用“（注：……）”（五号楷体）表示，放在相应图或表格下方。
+
+\begin{table*}[!ht]
+	\centering
+	\bicaption{文献中A处的百分比误差}{Percentage error at A} \label{rotationalframe}
+	\scalebox{0.65}{
+		\begin{tabular}{lccccccccccc}
+			\toprule[1.5pt]
+			Load & \multicolumn{2}{c}{$\delta_{p}=\delta_{q}=\delta_{r}=0$} & & \multicolumn{2}{c}{$\delta_{p}=1.0$}  &  & \multicolumn{2}{c}{$\delta_{q}=2.0$}    & &  \multicolumn{2}{c}{$\delta_{r}=3.0$}  \tabularnewline
+			\cline{2-3} \cline{5-6} \cline{8-9} \cline{11-12}
+			& AAAAAAAA & BBBBBBBB &  & AAAAAAAA & BBBBBBBB &  & AAAAAAAA & BBBBBBBB  &   & AAAAAAAA & BBBBBBBB   \rule{0pt}{15pt} \tabularnewline
+			\midrule[0.75pt]
+			0   & -2 & −2    &  & -3  & -3  &  & −4 & −4  &   & −5    & −5  \tabularnewline
+			\bottomrule[1.5pt]  
+	\end{tabular}}
+\end{table*}
+
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.5} %调整段落行距
+	\setlength{\tabcolsep}{15pt} %调整宽度
+	\bicaption{HPM}{Parameters of flux weakening of the three motors HPM}
+	\begin{tabular}{cccc}
+		\toprule[1.5pt]
+		参数 & 永磁同步电机 I & 永磁同步电机 II & 永磁同步电机 III \\ \midrule[0.75pt]
+		初始转矩 \(T_{ini}\) & 27.7Nm & 12.8Nm & 8.6Nm\\
+		初始转矩 \(T_{ini}\) & 27.7Nm & 12.8Nm & 8.6Nm \\ \bottomrule[1.5pt]  
+	\end{tabular}
+\end{table}
+
+
+\subsection{公式}
+公式书写应在文中另起一行，较长的公式尽可能在等号处回行，或者在“+”、“-”等符号处回行。公式中分数线的横线长短要分清，主要的横线应与等号取平。公式后应注明序号，该序号按章顺序编排，用括弧括起来写在右边行末，其间不加虚线。不得使用“*”等其它符号标记公式序号。   
+例如
 
 \begin{equation}\label{transformation}
 	\left(\begin{array}{l}
@@ -24,20 +77,21 @@
 	\end{array}\right\}\right]
 \end{equation}
 
-\begin{table*}[!h]
-	\centering
-	\bicaption{文献中A处的百分比误差}{Percentage error at A} \label{rotationalframe}
-	\scalebox{0.65}{
-		\begin{tabular}{lccccccccccc}
-			\toprule[1.5pt]
-			Load & \multicolumn{2}{c}{$\delta_{p}=\delta_{q}=\delta_{r}=0$} & & \multicolumn{2}{c}{$\delta_{p}=1.0$}  &  & \multicolumn{2}{c}{$\delta_{q}=2.0$}    & &  \multicolumn{2}{c}{$\delta_{r}=3.0$}  \tabularnewline
-			\cline{2-3} \cline{5-6} \cline{8-9} \cline{11-12}
-			& AAAAAAAA & BBBBBBBB &  & AAAAAAAA & BBBBBBBB &  & AAAAAAAA & BBBBBBBB  &   & AAAAAAAA & BBBBBBBB   \rule{0pt}{15pt} \tabularnewline
-			\midrule[0.75pt]
-			0   & -2.11 & −2.11    &  & -3.20  & -3.20  &  & −43.81  & −9.78  &   & −3.80    & −3.80  \tabularnewline
-			\bottomrule[1.5pt]  
-	\end{tabular}}
-\end{table*}
+\begin{align}
+	\label{eq:error1}
+	\hatvpsi_k(n) &= \vpsi_k(n) - \vw^\star(n) \\
+	\label{eq:error2}
+	\hatvw_k(n) &= \vw_k(n) - \vw^\star(n)
+\end{align}
+
+
+\begin{equation}\label{test}
+	I=\frac VR
+\end{equation}
+
+引用此公式时用式\eqref{test}。
+
+\subsection{算法}
 
 算法\cite{cottrell2009}
 \begin{enumerate}
@@ -47,7 +101,7 @@
 \end{enumerate}
 
 
-\begin{algorithm}[!h]
+\begin{algorithm}[!ht]
 	\caption{算法流程图名字} %算法的名字
 	\label{algorithm}
 	\begin{algorithmic}[!h]
@@ -64,14 +118,69 @@
 	\end{algorithmic}
 \end{algorithm}
 
-\begin{align}
-	\label{eq:error1}
-	\hatvpsi_k(n) &= \vpsi_k(n) - \vw^\star(n) \\
-	\label{eq:error2}
-	\hatvw_k(n) &= \vw_k(n) - \vw^\star(n)
-\end{align}
+\begin{remark}
+	全部
+	都是
+	注释
+\end{remark}
 
+\begin{prof}
+	全部
+	都是
+	证明
+\end{prof}
+\begin{theorem}
+	全部
+	都是
+	定理
+\end{theorem}
+\begin{lemma}
+	全部
+	都是
+	引理
+\end{lemma}
+\begin{axiom}
+	全部
+	都是
+	公理
+\end{axiom}
+\begin{proposition}
+	全部
+	都是
+	命题
+\end{proposition}
+\begin{definition}
+	全部
+	都是
+	定义
+\end{definition}
+\begin{assumption}
+	全部
+	都是
+	假设
+\end{assumption}
 
+\begin{corollary}
+	全部
+	都是
+	推论
+\end{corollary}
+\begin{exercise}
+	全部
+	都是
+	练习
+\end{exercise}
+
+\begin{problem}
+	全部
+	都是
+	问题
+\end{problem}
+\begin{conjecture}
+	全部
+	都是
+	猜想
+\end{conjecture}
 
 
 

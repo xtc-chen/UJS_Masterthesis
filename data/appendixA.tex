@@ -1,0 +1,48 @@
+\appendixA{
+\section{附录要求}
+如果要修改，请去ujsthesis.cls文件，查找附录A和附录B这两个关键词，修改为需要的标题。
+
+1.学位论文的附录部分
+附录部分作为学位论文主体的补充项目，并不是必须的。主要包括：
+
+(1) 正文内过分冗长的公式推导；
+
+(2) 为他人阅读方便所需辅助性数学工具或重复性的图、表；
+
+(3) 由于过分冗长而不宜在正文中出现的计算机程序清单。
+
+附录的序号编排按附录A，附录B…编排，附录（例如附录B）内的顺序可按B.1,B.1.1,B.1.1.1的规律编排，其内图表按：图B1，图B2，表B1，表B2的规律编排。
+
+附录可以单独装订，单独编排页码，封面上需注明论文正本的名称、作者等内容。如果附录与论文正本装在一起，则与正文连续编排页码。
+\begin{equation}
+	\left(\begin{array}{l}
+		x \\
+		y \\
+	\end{array}\right)=f\left[\left\{\begin{array}{l}
+		\xi \\
+		\eta \\
+	\end{array}\right\}\right]
+\end{equation}
+
+\begin{figure}[!ht]
+	\centering
+	{\includegraphics[scale=0.1]{Figures/logo/ujslogo.pdf}}
+	\bicaption{江苏大学}{Jiangsu University}
+	\label{Jiangsu University1}
+\end{figure}
+
+\begin{table}[h]
+	\centering
+	\renewcommand{\arraystretch}{1.5} %调整段落行距
+	\setlength{\tabcolsep}{15pt} %调整宽度
+	\caption{Parameters of flux weakening of the three motors HPM}
+	\begin{tabular}{cccc}
+		\toprule[1.5pt]
+		参数 & 永磁同步电机 I & 永磁同步电机 II & 永磁同步电机 III \\ \midrule[0.75pt]
+		初始转矩 \(T_{ini}\) & 27.7Nm & 12.8Nm & 8.6Nm\\
+		初始转矩 \(T_{ini}\) & 27.7Nm & 12.8Nm & 8.6Nm \\ \bottomrule[1.5pt]  
+	\end{tabular}
+\end{table}
+
+
+}
