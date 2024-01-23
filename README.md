@@ -28,6 +28,8 @@ UJS_Masterthesis
 + Texstudio 4.3
 + Texlive2019（Texlive2019下载地址：https://ftp.math.utah.edu/pub/tex/historic/systems/texlive/2019/ ）
 + 采用xelatex编译
+---
+
 
 # 已知问题汇总
 + 已有同学使用了较高版本的Texlive2022进行编译。会出现找不到字体的错误，原因是后续的texlive中newtx宏包有点不太一样。因为本人能力有限，目前尚未解决。所以建议用Texlive2019进行编译。
