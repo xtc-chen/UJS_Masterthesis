@@ -65,7 +65,8 @@ UJS_Masterthesis
 + UJS_Masterthesis是为了帮助江苏大学硕士毕业生撰写毕业论文而编写的LaTeX论文模板，其前提是用户已经能处理一般的LaTeX文档，并对BibTeX有一定了解，如果你从来没有接触过LaTeX，建议先学习相关基础知识，磨刀不误砍柴工，能有助你更好使用模板。
 + 由于个人水平有限，虽然现在的这个版本基本上满足了学校的要求，但难免存在不足之处，欢迎大家积极反馈，更希望江苏大学LaTeX爱好者能一同完善此模板，让更多同学受益。
 + 如果帮助到大家，欢迎大家打赏，谢谢。
-![IMG_8331(20240123-211354)](https://github.com/xtc-chen/UJS_Masterthesis/assets/84300491/a52fbbd0-ea7f-47f5-b523-1641b73efc49)
+<img src="https://github.com/xtc-chen/UJS_Masterthesis/assets/84300491/a52fbbd0-ea7f-47f5-b523-1641b73efc49" alt="Your Image Description" width="60" height="40">
+
 
 ***
 
