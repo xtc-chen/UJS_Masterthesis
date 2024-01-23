@@ -1,4 +1,5 @@
-\documentclass{ujsthesis}
+% !TEX program = xelatex
+\documentclass[xelatex]{ujsthesis}
 
 \begin{document}
 
@@ -7,17 +8,25 @@
 \input{data/abstract.tex} % 摘要
 \tableofcontents          % 目录
 
- \mainmatter{}              % 论文主体部分
- \input{data/chapter01.tex} % 第一章内容
- \input{data/chapter02.tex} % 第二章内容
- \input{data/chapter03.tex} % 第三章内容
- \input{data/chapter04.tex} % 第四章内容
- \input{data/chapter05.tex} % 第五章内容
- \input{data/chapter06.tex} % 第六章内容
+\renewcommand{\listfigurename}{插图目录}  % 图目录，如不需要请注释
+\listoffigures                           
+\renewcommand{\listtablename}{表目录}     % 表目录，如不需要请注释
+\listoftables                            
+
+ \mainmatter{}               % 论文主体部分
+ \input{data/chapter01.tex}  % 第一章内容
+ \input{data/chapter02.tex}  % 第二章内容
+ \input{data/chapter03.tex}  % 第三章内容
+ \input{data/chapter04.tex}  % 第四章内容
+ \input{data/chapter05.tex}  % 第五章内容
+ \input{data/chapter06.tex}  % 第六章内容
 
  \backmatter{}                    % 论文附录部分
  \input{data/references.tex}      % 参考文献
  \input{data/acknowledgement.tex} % 致谢
  \input{data/achievements.tex}    % 科研成果
+ \input{data/appendixA.tex}       % 附录A
+ \input{data/appendixB.tex}       % 附录B
+
 
 \end{document}

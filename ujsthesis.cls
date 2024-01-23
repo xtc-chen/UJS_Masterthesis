@@ -8,6 +8,12 @@
     linespread = 1.7    % 对应word里的1.5倍行距
     ]{ctexbook}
 
+%20240121修改补充，支持texlive2023
+% 添加 amssymb 宏包
+\RequirePackage{amssymb}
+% 添加 ulem 宏包
+\RequirePackage{ulem}
+
 \RequirePackage{geometry} % 页面设置宏包
 \RequirePackage{fancyhdr} % 页眉页脚设置宏包
 \RequirePackage{graphicx} % 插图宏包
@@ -15,7 +21,17 @@
 \RequirePackage[tbtags]{amsmath} % 数学公式宏包，多行公式编号在最后一行
 \RequirePackage{amsthm}    % 定理环境宏包
 %\RequirePackage{newtxmath} % 公式字体设置宏包，需要在数学宏包后加载
-\usepackage{newtxtext,newtxmath}
+%\usepackage{newtxtext,newtxmath}
+
+%20240121修改补充，支持texlive2023,将公式风格改为新罗马字体
+\setmainfont{XITS}
+\usepackage{unicode-math} % 需要 unicode-math 宏包
+\setmathfont{XITS Math}
+
+% \setmainfont{TeX Gyre Termes}
+% \usepackage{unicode-math} % 需要 unicode-math 宏包
+% \setmathfont{TeX Gyre Termes Math}
+
 %\usepackage{newpxtext,newpxmath}
 \RequirePackage{titletoc}  % 目录设置宏包
 \RequirePackage[super,square,comma,sort&compress]{natbib} % 参考文献设置宏包
@@ -37,25 +53,14 @@
 \captionsetup[figure][bi-second]{name=Fig.} %设置图的英文编号前缀
 \captionsetup[table][bi-second]{name=Tab.} %设置表的英文编号前缀
 \usepackage{makecell}
-\usepackage{cancel} 
+\usepackage{cancel}
+\usepackage[list=off]{bicaption} %消除图标目录的英文标题
 \setCJKmainfont{SimSun}[AutoFakeBold,ItalicFont=KaiTi]
 \newcommand{\zhongsong}{\CJKfontspec{STZhongsong}}
 \usepackage{tikz}
+
 \newcommand*{\circled}[1]{\lower.7ex\hbox{\tikz\draw (0pt, 0pt)%
 		circle (.5em) node {\makebox[1em][c]{\small #1}};}}
-%设置字号
-\usepackage{ctexsize,type1cm}
-\newcommand{\yihao}{\fontsize{26pt}{39pt}\selectfont}
-\newcommand{\xiaoyi}{\fontsize{24pt}{36pt}\selectfont}   
-\newcommand{\erhao}{\fontsize{22pt}{33pt}\selectfont}          
-\newcommand{\xiaoer}{\fontsize{18pt}{27pt}\selectfont}          
-\newcommand{\sanhao}{\fontsize{16pt}{24pt}\selectfont}        
-\newcommand{\xiaosan}{\fontsize{15pt}{22.5pt}\selectfont}        
-\newcommand{\sihao}{\fontsize{14pt}{21pt}\selectfont}            
-\newcommand{\xiaosi}{\fontsize{12pt}{18pt}\selectfont}            
-\newcommand{\wuhao}{\fontsize{10.5pt}{15.75pt}\selectfont}
-\newcommand{\xiaowu}{\fontsize{9pt}{13.5pt}\selectfont}    
-\newcommand{\liuhao}{\fontsize{7.5pt}{11.25pt}\selectfont}
 
 % CTeX宏集选项
 \ctexset{
@@ -120,6 +125,8 @@
 \def\ujs@label@ekeywords{Keywords}
 \def\ujs@label@acknowledgement{致谢}
 \def\ujs@label@achievements{攻读硕士学位期间完成的论文及其他科研成果}
+\def\ujs@label@appendixA{附录A \quad 缩略语}
+\def\ujs@label@appendixB{附录B \quad 中英文符号及缩写对照表}
 
 % 定义专业类型
 \def\ujs@label@degreetype{}		
@@ -216,6 +223,34 @@
 \titlecontents{section}[2em]{}{\thecontentslabel~~}{}{\titlerule*[0.25em]{.}\contentspage}
 \titlecontents{subsection}[4em]{}{\thecontentslabel~~}{}{\titlerule*[0.25em]{.}\contentspage}
 
+\newcommand{\customfigureformat}{
+	\renewcommand*{\addvspace}[1]{}
+	\def\loflabel{图} 
+	\renewcommand{\numberline}[1]{\loflabel~##1\hspace*{1em}}
+}
+
+\let\oldlistoffigures\listoffigures
+\renewcommand{\listoffigures}{%
+	\begingroup % 新增
+	\customfigureformat % 使用新的命令设置格式
+	\oldlistoffigures % 调用原始的 \listoffigures
+	\endgroup % 新增
+}
+
+\newcommand{\customtableformat}{
+	\renewcommand*{\addvspace}[1]{}
+	\def\loflabel{表} 
+	\renewcommand{\numberline}[1]{\loflabel~##1\hspace*{1em}}
+}
+
+\let\oldlistoftables\listoftables
+\renewcommand{\listoftables}{%
+	\begingroup % 新增
+	\customtableformat % 使用新的命令设置格式
+	\oldlistoftables % 调用原始的 \listoffigures
+	\endgroup % 新增
+}
+
 % 设置列表格式
 % \setlist{noitemsep} % 将列表间垂直距离置零
 \setlist{nosep} % 将列表与段落、列表间垂直距离置零
@@ -232,7 +267,7 @@
 \renewcommand{\algorithmicensure}{\textbf{输出:}}
 
 % 设置定理、引理、证明等环境格式
-\newtheoremstyle{ujstheoremstyle}{0pt}{0pt}{}{\parindent}{\bfseries}{}{ }{}
+\newtheoremstyle{ujstheoremstyle}{0pt}{0pt}{\kaishu}{\parindent}{\bfseries}{}{ }{}
 \theoremstyle{ujstheoremstyle}
 \newtheorem*{prof}{证明}
 \newtheorem{theorem}{定理}[chapter]
@@ -244,7 +279,8 @@
 \newtheorem{corollary}{推论}[chapter]
 \newtheorem{exercise}{练习}[chapter]
 \newtheorem{example}{例}[chapter]
-\newtheorem{remark}{注释}[chapter]
+\newtheorem{remark}{注}[chapter]
+%\newtheorem{remark}{注释}[chapter]
 \newtheorem{problem}{问题}[chapter]
 \newtheorem{conjecture}{猜想}[chapter]
 
@@ -424,6 +460,40 @@
     \chapter*{\ujs@label@achievements}
     \addcontentsline{toc}{chapter}{\ujs@label@achievements}
     {#1}
+}
+
+
+% 设置附录A1页面
+\newcommand{\appendixA}[1]{
+	\chapter*{\ujs@label@appendixA}
+	\setcounter{table}{0}   %从0开始编号，显示出来表会A1开始编号
+	\setcounter{figure}{0}
+	\setcounter{section}{0}
+	\setcounter{equation}{0}
+	%定义编号格式，在数字序号前加字符“A"
+	\renewcommand{\thetable}{A\arabic{table}}
+	\renewcommand{\thefigure}{A\arabic{figure}}
+	\renewcommand{\thesection}{A\arabic{section}}
+	\renewcommand{\theequation}{A\arabic{equation}}
+	\addcontentsline{toc}{chapter}{\ujs@label@appendixA}
+	{#1}
+
+}
+
+% 设置附录B1页面
+\newcommand{\appendixB}[1]{
+	\chapter*{\ujs@label@appendixB}
+	\setcounter{table}{0}   %从0开始编号，显示出来表会B1开始编号
+	\setcounter{figure}{0}
+	\setcounter{section}{0}
+	\setcounter{equation}{0}
+	%定义编号格式，在数字序号前加字符“B"
+	\renewcommand{\thetable}{B\arabic{table}}
+	\renewcommand{\thefigure}{B\arabic{figure}}
+	\renewcommand{\thesection}{B\arabic{section}}
+	\renewcommand{\theequation}{B\arabic{equation}}
+	\addcontentsline{toc}{chapter}{\ujs@label@appendixB}
+	{#1}
 }
 
 % 设置空白页	
