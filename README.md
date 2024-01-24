@@ -37,7 +37,6 @@ UJS_Masterthesis
 + Texlive2023（2023以下版本皆可；如有CTex，需卸载后再装Texlive）
 + 采用xelatex编译
   
-
 # 已知问题汇总
 ---
 + Q：已有同学使用了较高版本的Texlive2022进行编译。会出现找不到字体的错误，原因是后续的texlive中newtx宏包有点不太一样。
