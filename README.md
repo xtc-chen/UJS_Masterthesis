@@ -1,9 +1,9 @@
-# UJS_Masterthesis-20240124，xiaotianchen修订
+# 使用前请先阅读以下说明！！！
+# UJS_Masterthesis-20240124修订说明（By [Chen Xiaotian](https://github.com/xtc-chen)），
 ---
-# 20240124修订说明
-+ 修复了高版本texlive中newtx宏包问题，原来的模板中newtx宏包和Times New Roman字体冲突，目前选择了其他字体进行替换；具体命令可以在Cls文件中查看。
++ 修复了高版本texlive中newtx宏报错问题，原来的模板中newtx宏包和Times New Roman字体冲突，目前选择了其他字体进行替换；具体命令可以在cls文件中查看。
 + 根据部分同学的要求在目录前增加了表目录和图目录；如不需要可以删除。
-+ 部分同学有附录的需求，所以在文章的最后加入了附录A和附录B。
++ 部分同学有附录的需求，所以在文章的最后加入了附录A和附录B；如不需要可以删除。
 
 # 江苏大学硕士研究生学位论文LaTeX模板
 ---
@@ -12,8 +12,6 @@
 本项目为[江苏大学](https://www.ujs.edu.cn/)**硕士**研究生学位论文UJS_Masterthesis模板，论文样式参考[2022年4月江苏大学研究生院发布的硕士学论模板](https://yjsy.ujs.edu.cn/info/1273/13655.htm)
 
 本项目基于[ctexbook](https://ctan.org/pkg/ctex)，以及前人的基础进行修改
-
-希望此模板能够给江苏大学里喜欢用Latex的同学给予学位论文撰写上的帮助
 
 # 文件列表及说明
 ---
@@ -71,8 +69,8 @@ UJS_Masterthesis
 
 # 最后
 ---
-+ UJS_Masterthesis是为了帮助江苏大学硕士毕业生撰写毕业论文而编写的LaTeX论文模板，其前提是用户已经能处理一般的LaTeX文档，并对BibTeX有一定了解，如果你从来没有接触过LaTeX，建议先学习相关基础知识，磨刀不误砍柴工，能有助你更好使用模板。
-+ 由于个人水平有限，虽然现在的这个版本基本上满足了学校的要求，但难免存在不足之处，欢迎大家积极反馈，更希望江苏大学LaTeX爱好者能一同完善此模板，让更多同学受益。
++ UJS_Masterthesis是为了帮助江苏大学硕士毕业生撰写毕业论文而编写的LaTeX论文模板（硕士论文工作量大、公式多），其前提是用户已经能处理一般的LaTeX文档，并对BibTeX有一定了解，如果你从来没有接触过LaTeX，建议先学习相关基础知识。磨刀不误砍柴工，一定的基础有助你更好地使用模板。
++ 由于个人水平有限，虽然现在的这个版本基本上满足了学校的要求，但难免存在不足之处，欢迎大家积极反馈，更希望江苏大学LaTeX爱好者能一同完善此模板，让更多同学受益。愿此模板能够让大家喜欢并给予大家帮助！
 + 修改不易，如果能帮助到大家，欢迎打赏，谢谢！
   
 <img src="https://github.com/xtc-chen/UJS_Masterthesis/assets/84300491/a52fbbd0-ea7f-47f5-b523-1641b73efc49" alt="Your Image Description" width="300">
