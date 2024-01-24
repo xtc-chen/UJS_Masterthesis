@@ -34,7 +34,7 @@ UJS_Masterthesis
  ---
 + Windows11
 + Texstudio 4.7.2
-+ Texlive2023（2023以下版本皆可）（如有CTex，需卸载后再装Texlive）
++ Texlive2023（2023以下版本皆可；如有CTex，需卸载后再装Texlive）
 + 采用xelatex编译
   
 
