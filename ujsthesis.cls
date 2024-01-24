@@ -419,6 +419,7 @@
     \vspace*{2.0cm} \par
     
     {\zihao{3} Jiangsu University}\par
+    \vspace*{0.5cm} \par
     {\zihao{3} \ujs@value@defenseenglishdate}
      
      \end{center}
