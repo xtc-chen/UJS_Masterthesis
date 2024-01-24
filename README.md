@@ -1,13 +1,13 @@
 # UJS_Masterthesis-20240124，xiaotianchen修订
 ---
 # 20240124修订说明
-+ 修复了高版本texlive中newtx宏包问题，原来的模板中newtx宏包和Times New Roman字体冲突，目前选择了其他字体进行替换。具体命令可以在Cls文件中查看。
++ 修复了高版本texlive中newtx宏包问题，原来的模板中newtx宏包和Times New Roman字体冲突，目前选择了其他字体进行替换；具体命令可以在Cls文件中查看。
 + 根据部分同学的要求在目录前增加了表目录和图目录；如不需要可以删除。
 + 部分同学有附录的需求，所以在文章的最后加入了附录A和附录B。
 
 # 江苏大学硕士研究生学位论文LaTeX模板
 ---
-> 非官方版本，不保证能够完全满足最终论文提交等要求，已经尽力完善！
+> ### 非官方版本，不保证能够完全满足最终论文提交等要求，已经尽力完善！
 
 本项目为[江苏大学](https://www.ujs.edu.cn/)**硕士**研究生学位论文UJS_Masterthesis模板，论文样式参考[2022年4月江苏大学研究生院发布的硕士学论模板](https://yjsy.ujs.edu.cn/info/1273/13655.htm)
 
@@ -25,7 +25,8 @@ UJS_Masterthesis
  |- reference.bib                   // LaTeX模板中的参考文献文件
  |- gbt7714-2005-numerical.bst      // 国标参考文献BibTeX样式文件2005版
  |- figures                         // 论文图片文件夹
- |- date                            // 每一章的tex文件
+ |- figures/logo                    // 江苏大学logo文件
+ |- data                            // 每一章的tex文件
  |- fonts                           // 字体文件夹
 ```
  
@@ -33,8 +34,9 @@ UJS_Masterthesis
  ---
 + Windows11
 + Texstudio 4.7.2
-+ Texlive2023（2023以下版本皆可）
++ Texlive2023（2023以下版本皆可）（如有CTex，需卸载后再装Texlive）
 + 采用xelatex编译
+  
 
 # 已知问题汇总
 ---
