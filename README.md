@@ -1,5 +1,5 @@
 # 使用前请先阅读以下说明！！！
-# UJS_Masterthesis-20240124修订说明（By [Chen Xiaotian](https://github.com/xtc-chen)），
+# UJS_Masterthesis-20240124修订说明（By [Chen Xiaotian](https://github.com/xtc-chen)）
 ---
 + 修复了高版本texlive中newtx宏报错问题，原来的模板中newtx宏包和Times New Roman字体冲突，目前选择了其他字体进行替换；具体命令可以在cls文件中查看。
 + 根据部分同学的要求在目录前增加了表目录和图目录；如不需要可以删除。
