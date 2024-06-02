@@ -1,4 +1,6 @@
-# 使用前请先阅读以下说明！！！
+# 使用说明
+---
+# ！！！使用本模板前，请先和导师确认是否可以使用Latex，部分导师只接受Word排版；注意：Latex转Word会存在问题，请慎重。
 ---
 # UJS_Masterthesis-20240124修订说明（By [Chen Xiaotian](https://github.com/xtc-chen)）
 ---
